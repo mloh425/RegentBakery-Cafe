@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		347D4ADE1BC9F78300A16DAE /* Cake.m in Sources */ = {isa = PBXBuildFile; fileRef = 347D4ADD1BC9F78300A16DAE /* Cake.m */; settings = {ASSET_TAGS = (); }; };
+		347D4AE21BC9F79B00A16DAE /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 347D4AE11BC9F79B00A16DAE /* Order.m */; settings = {ASSET_TAGS = (); }; };
+		347D4AE61BCA043700A16DAE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4AE51BCA043700A16DAE /* AudioToolbox.framework */; };
+		347D4AE81BCA043D00A16DAE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4AE71BCA043D00A16DAE /* CFNetwork.framework */; };
+		347D4AEA1BCA044300A16DAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4AE91BCA044300A16DAE /* CoreGraphics.framework */; };
+		347D4AEC1BCA044C00A16DAE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4AEB1BCA044B00A16DAE /* CoreLocation.framework */; };
+		347D4AEE1BCA045200A16DAE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4AED1BCA045200A16DAE /* QuartzCore.framework */; };
+		347D4AF01BCA045700A16DAE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4AEF1BCA045700A16DAE /* Security.framework */; };
+		347D4AF21BCA045D00A16DAE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4AF11BCA045D00A16DAE /* StoreKit.framework */; };
+		347D4AF41BCA046400A16DAE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4AF31BCA046400A16DAE /* SystemConfiguration.framework */; };
+		347D4AF61BCA048300A16DAE /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4AF51BCA048300A16DAE /* libz.1.1.3.tbd */; };
+		347D4AF81BCA048F00A16DAE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4AF71BCA048F00A16DAE /* libsqlite3.tbd */; };
+		347D4B0E1BCA0FF300A16DAE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4B071BCA0FF300A16DAE /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		347D4B0F1BCA0FF300A16DAE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4B081BCA0FF300A16DAE /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		347D4B101BCA0FF300A16DAE /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4B091BCA0FF300A16DAE /* ParseCrashReporting.framework */; settings = {ASSET_TAGS = (); }; };
+		347D4B111BCA0FF300A16DAE /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4B0A1BCA0FF300A16DAE /* ParseFacebookUtils.framework */; settings = {ASSET_TAGS = (); }; };
+		347D4B121BCA0FF300A16DAE /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4B0B1BCA0FF300A16DAE /* ParseFacebookUtilsV4.framework */; settings = {ASSET_TAGS = (); }; };
+		347D4B131BCA0FF300A16DAE /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4B0C1BCA0FF300A16DAE /* ParseTwitterUtils.framework */; settings = {ASSET_TAGS = (); }; };
+		347D4B141BCA0FF300A16DAE /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4B0D1BCA0FF300A16DAE /* ParseUI.framework */; settings = {ASSET_TAGS = (); }; };
+		347D4B161BCC708700A16DAE /* cakes.json in Resources */ = {isa = PBXBuildFile; fileRef = 347D4B151BCC708700A16DAE /* cakes.json */; settings = {ASSET_TAGS = (); }; };
+		347D4B191BCDA18800A16DAE /* CakeMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347D4B181BCDA18800A16DAE /* CakeMenuViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34EF00021BC3339400ACC465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EF00001BC3339400ACC465 /* LaunchScreen.storyboard */; };
 		34EF000D1BC3339400ACC465 /* Regent_Bakery___CafeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF000C1BC3339400ACC465 /* Regent_Bakery___CafeTests.m */; };
 		34EF00181BC3339400ACC465 /* Regent_Bakery___CafeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF00171BC3339400ACC465 /* Regent_Bakery___CafeUITests.m */; };
@@ -36,6 +57,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		347D4ADC1BC9F78300A16DAE /* Cake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cake.h; sourceTree = "<group>"; };
+		347D4ADD1BC9F78300A16DAE /* Cake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cake.m; sourceTree = "<group>"; };
+		347D4AE01BC9F79B00A16DAE /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		347D4AE11BC9F79B00A16DAE /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		347D4AE51BCA043700A16DAE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		347D4AE71BCA043D00A16DAE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		347D4AE91BCA044300A16DAE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		347D4AEB1BCA044B00A16DAE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		347D4AED1BCA045200A16DAE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		347D4AEF1BCA045700A16DAE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		347D4AF11BCA045D00A16DAE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		347D4AF31BCA046400A16DAE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		347D4AF51BCA048300A16DAE /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
+		347D4AF71BCA048F00A16DAE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		347D4B071BCA0FF300A16DAE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		347D4B081BCA0FF300A16DAE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		347D4B091BCA0FF300A16DAE /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		347D4B0A1BCA0FF300A16DAE /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		347D4B0B1BCA0FF300A16DAE /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		347D4B0C1BCA0FF300A16DAE /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
+		347D4B0D1BCA0FF300A16DAE /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		347D4B151BCC708700A16DAE /* cakes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cakes.json; sourceTree = "<group>"; };
+		347D4B171BCDA18800A16DAE /* CakeMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CakeMenuViewController.h; sourceTree = "<group>"; };
+		347D4B181BCDA18800A16DAE /* CakeMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CakeMenuViewController.m; sourceTree = "<group>"; };
 		34EF00011BC3339400ACC465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34EF00031BC3339400ACC465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34EF00081BC3339400ACC465 /* Regent Bakery & CafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Regent Bakery & CafeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,12 +120,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				347D4B111BCA0FF300A16DAE /* ParseFacebookUtils.framework in Frameworks */,
+				347D4AF81BCA048F00A16DAE /* libsqlite3.tbd in Frameworks */,
+				347D4AF61BCA048300A16DAE /* libz.1.1.3.tbd in Frameworks */,
+				347D4AF41BCA046400A16DAE /* SystemConfiguration.framework in Frameworks */,
+				347D4AF21BCA045D00A16DAE /* StoreKit.framework in Frameworks */,
+				347D4AF01BCA045700A16DAE /* Security.framework in Frameworks */,
+				347D4B131BCA0FF300A16DAE /* ParseTwitterUtils.framework in Frameworks */,
+				347D4AEE1BCA045200A16DAE /* QuartzCore.framework in Frameworks */,
+				347D4AEC1BCA044C00A16DAE /* CoreLocation.framework in Frameworks */,
+				347D4B141BCA0FF300A16DAE /* ParseUI.framework in Frameworks */,
+				347D4AEA1BCA044300A16DAE /* CoreGraphics.framework in Frameworks */,
+				347D4B0E1BCA0FF300A16DAE /* Bolts.framework in Frameworks */,
+				347D4AE81BCA043D00A16DAE /* CFNetwork.framework in Frameworks */,
+				347D4B0F1BCA0FF300A16DAE /* Parse.framework in Frameworks */,
+				347D4AE61BCA043700A16DAE /* AudioToolbox.framework in Frameworks */,
+				347D4B101BCA0FF300A16DAE /* ParseCrashReporting.framework in Frameworks */,
+				347D4B121BCA0FF300A16DAE /* ParseFacebookUtilsV4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		347D4ADF1BC9F78E00A16DAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				347D4ADC1BC9F78300A16DAE /* Cake.h */,
+				347D4ADD1BC9F78300A16DAE /* Cake.m */,
+				347D4AE01BC9F79B00A16DAE /* Order.h */,
+				347D4AE11BC9F79B00A16DAE /* Order.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		34EF000B1BC3339400ACC465 /* Regent Bakery & CafeTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +185,23 @@
 		34EFFFE61BC3339400ACC465 = {
 			isa = PBXGroup;
 			children = (
+				347D4B071BCA0FF300A16DAE /* Bolts.framework */,
+				347D4B081BCA0FF300A16DAE /* Parse.framework */,
+				347D4B091BCA0FF300A16DAE /* ParseCrashReporting.framework */,
+				347D4B0A1BCA0FF300A16DAE /* ParseFacebookUtils.framework */,
+				347D4B0B1BCA0FF300A16DAE /* ParseFacebookUtilsV4.framework */,
+				347D4B0C1BCA0FF300A16DAE /* ParseTwitterUtils.framework */,
+				347D4B0D1BCA0FF300A16DAE /* ParseUI.framework */,
+				347D4AF71BCA048F00A16DAE /* libsqlite3.tbd */,
+				347D4AF51BCA048300A16DAE /* libz.1.1.3.tbd */,
+				347D4AF31BCA046400A16DAE /* SystemConfiguration.framework */,
+				347D4AF11BCA045D00A16DAE /* StoreKit.framework */,
+				347D4AEF1BCA045700A16DAE /* Security.framework */,
+				347D4AED1BCA045200A16DAE /* QuartzCore.framework */,
+				347D4AEB1BCA044B00A16DAE /* CoreLocation.framework */,
+				347D4AE91BCA044300A16DAE /* CoreGraphics.framework */,
+				347D4AE71BCA043D00A16DAE /* CFNetwork.framework */,
+				347D4AE51BCA043700A16DAE /* AudioToolbox.framework */,
 				34EFFFF11BC3339400ACC465 /* Regent Bakery & Cafe */,
 				34EF000B1BC3339400ACC465 /* Regent Bakery & CafeTests */,
 				34EF00161BC3339400ACC465 /* Regent Bakery & CafeUITests */,
@@ -135,12 +225,16 @@
 				34EF00281BC3345500ACC465 /* Parse Keys */,
 				34EFFFF51BC3339400ACC465 /* AppDelegate.h */,
 				34EFFFF61BC3339400ACC465 /* AppDelegate.m */,
+				347D4ADF1BC9F78E00A16DAE /* Model */,
 				34EFFFF81BC3339400ACC465 /* ViewController.h */,
 				34EFFFF91BC3339400ACC465 /* ViewController.m */,
+				347D4B171BCDA18800A16DAE /* CakeMenuViewController.h */,
+				347D4B181BCDA18800A16DAE /* CakeMenuViewController.m */,
 				34EFFFFB1BC3339400ACC465 /* Main.storyboard */,
 				34EFFFFE1BC3339400ACC465 /* Assets.xcassets */,
 				34EF00001BC3339400ACC465 /* LaunchScreen.storyboard */,
 				34EF00031BC3339400ACC465 /* Info.plist */,
+				347D4B151BCC708700A16DAE /* cakes.json */,
 				34EFFFF21BC3339400ACC465 /* Supporting Files */,
 			);
 			path = "Regent Bakery & Cafe";
@@ -272,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34EF00021BC3339400ACC465 /* LaunchScreen.storyboard in Resources */,
+				347D4B161BCC708700A16DAE /* cakes.json in Resources */,
 				34EFFFFF1BC3339400ACC465 /* Assets.xcassets in Resources */,
 				34EFFFFD1BC3339400ACC465 /* Main.storyboard in Resources */,
 			);
@@ -300,9 +395,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				347D4AE21BC9F79B00A16DAE /* Order.m in Sources */,
+				347D4ADE1BC9F78300A16DAE /* Cake.m in Sources */,
 				34EFFFFA1BC3339400ACC465 /* ViewController.m in Sources */,
 				34EF00271BC3344900ACC465 /* Keys.m in Sources */,
 				34EFFFF71BC3339400ACC465 /* AppDelegate.m in Sources */,
+				347D4B191BCDA18800A16DAE /* CakeMenuViewController.m in Sources */,
 				34EFFFF41BC3339400ACC465 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +526,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.9.0",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Regent Bakery & Cafe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MatthewLoh.Regent-Bakery---Cafe";
@@ -439,6 +542,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.9.0",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Regent Bakery & Cafe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MatthewLoh.Regent-Bakery---Cafe";
@@ -504,6 +612,7 @@
 				34EF001E1BC3339400ACC465 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34EF001F1BC3339400ACC465 /* Build configuration list for PBXNativeTarget "Regent Bakery & CafeTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +621,7 @@
 				34EF00211BC3339400ACC465 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34EF00221BC3339400ACC465 /* Build configuration list for PBXNativeTarget "Regent Bakery & CafeUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +630,7 @@
 				34EF00241BC3339400ACC465 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34EFFFEA1BC3339400ACC465 /* Build configuration list for PBXProject "Regent Bakery & Cafe" */ = {
 			isa = XCConfigurationList;
