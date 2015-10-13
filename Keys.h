@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Keys : NSObject
+extern NSString *const kClientKey;
+extern NSString *const kApplicationID;
 
-@end
