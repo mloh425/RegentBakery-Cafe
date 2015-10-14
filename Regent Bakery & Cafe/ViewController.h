@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Cake.h"
 
 @interface ViewController : UIViewController
 
