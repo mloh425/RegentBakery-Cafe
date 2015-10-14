@@ -17,6 +17,7 @@
 @dynamic pickupDate;
 @dynamic cake;
 @dynamic message;
+@dynamic size;
 
 + (void)load {
   [self registerSubclass];

@@ -8,7 +8,6 @@
         <!--Main Menu View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                 <viewController id="BYZ-38-t0r" customClass="MainMenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -216,9 +215,9 @@
                                                         <variation key="default">
                                                             <mask key="constraints">
                                                                 <exclude reference="DUn-Bb-huJ"/>
+                                                                <exclude reference="L6G-tp-bfD"/>
                                                                 <exclude reference="heI-Th-uGX"/>
                                                                 <exclude reference="oTS-RV-Yrw"/>
-                                                                <exclude reference="L6G-tp-bfD"/>
                                                             </mask>
                                                         </variation>
                                                         <variation key="widthClass=compact" layoutMarginsFollowReadableWidth="NO"/>

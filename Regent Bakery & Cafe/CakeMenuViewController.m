@@ -37,7 +37,7 @@
     for (NSDictionary *cake in rootObject) {
       Cake *flavor = [[Cake alloc] init];
       flavor.flavor = cake[@"flavor"];
-      flavor.description = cake[@"description"];
+      flavor.cakeDescription = cake[@"description"];
       flavor.sizePricing = cake[@"sizePricing"];
     
       //    NSLog(@"%@", flavor.flavor);
