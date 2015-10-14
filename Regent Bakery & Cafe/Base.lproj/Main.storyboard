@@ -215,9 +215,9 @@
                                                         <variation key="default">
                                                             <mask key="constraints">
                                                                 <exclude reference="DUn-Bb-huJ"/>
+                                                                <exclude reference="L6G-tp-bfD"/>
                                                                 <exclude reference="heI-Th-uGX"/>
                                                                 <exclude reference="oTS-RV-Yrw"/>
-                                                                <exclude reference="L6G-tp-bfD"/>
                                                             </mask>
                                                         </variation>
                                                         <variation key="widthClass=compact" layoutMarginsFollowReadableWidth="NO"/>
