@@ -15,6 +15,7 @@
 @dynamic pickupLocation;
 @dynamic orderDate;
 @dynamic pickupDate;
+@dynamic size;
 @dynamic cake;
 @dynamic message;
 

@@ -13,9 +13,10 @@
 //@interface Cake : PFObject <PFSubclassing>
 @interface Cake : NSObject
 @property (strong, nonatomic) NSString *flavor;
-@property (strong, nonatomic) NSString *description;
+@property (strong, nonatomic) NSString *cakeDescription;
 @property (strong, nonatomic) NSArray *photos; //Whole Cake, Slice, SideView
 @property (strong, nonatomic) NSMutableDictionary *sizePricing;
+@property (strong, nonatomic) NSArray *sortedSizePricingKeys;
 
 //@property (strong, nonatomic) NSDate *pickupDate;
 

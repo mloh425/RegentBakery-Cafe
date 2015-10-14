@@ -12,6 +12,8 @@
 @property (strong, nonatomic) NSMutableArray *cakes;
 @end
 
+
+//Pass reference of selected cake to order/customization view controller -> maybe just go to Detail then order?
 @implementation CakeMenuViewController
 
 - (void)viewDidLoad {
@@ -37,9 +39,22 @@
     for (NSDictionary *cake in rootObject) {
       Cake *flavor = [[Cake alloc] init];
       flavor.flavor = cake[@"flavor"];
-      flavor.description = cake[@"description"];
+      flavor.cakeDescription = cake[@"description"];
       flavor.sizePricing = cake[@"sizePricing"];
-    
+      flavor.sortedSizePricingKeys = [flavor.sizePricing keysSortedByValueUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        if ([obj1 integerValue] > [obj2 integerValue]) {
+          
+          return (NSComparisonResult)NSOrderedDescending;
+        }
+        if ([obj1 integerValue] < [obj2 integerValue]) {
+          
+          return (NSComparisonResult)NSOrderedAscending;
+        }
+        
+        return (NSComparisonResult)NSOrderedSame;
+      }];
+      
+      NSLog(@"%@", flavor.sortedSizePricingKeys);
       //    NSLog(@"%@", flavor.flavor);
       //    NSLog(@"%@", flavor.sizePricing);
     }
