@@ -11,11 +11,14 @@
 #import <Parse/PFObject+Subclass.h>
 
 //@interface Cake : PFObject <PFSubclassing>
-@interface Cake : NSObject
+@interface Cake : NSObject {
+  
+}
 @property (strong, nonatomic) NSString *flavor;
 @property (strong, nonatomic) NSString *cakeDescription;
 @property (strong, nonatomic) NSArray *photos; //Whole Cake, Slice, SideView
 @property (strong, nonatomic) NSMutableDictionary *sizePricing;
+@property (strong, nonatomic) NSString *imageName;
 
 //@property (strong, nonatomic) NSDate *pickupDate;
 
