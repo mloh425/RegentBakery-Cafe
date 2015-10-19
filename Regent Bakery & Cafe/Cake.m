@@ -9,12 +9,19 @@
 #import "Cake.h"
 //#import <Parse/Parse.h>
 
-@implementation Cake
+@implementation Cake {
+  
+}
+@synthesize flavor = _flavor;
+@synthesize cakeDescription = _cakeDescription;
+@synthesize sizePricing = _sizePricing;
+@synthesize imageName = _imageName;
+
 //@dynamic flavor;
-//@dynamic description;
+//@dynamic cakeDescription;
 //@dynamic photos;
 //@dynamic sizePricing;
-//
+
 //+ (void)load {
 //  [self registerSubclass];
 //}
