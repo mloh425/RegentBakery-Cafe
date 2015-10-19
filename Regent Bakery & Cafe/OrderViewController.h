@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Cake.h"
 
 @interface OrderViewController : UIViewController
+
+@property (strong, nonatomic) Cake *selectedCake;
 
 @end

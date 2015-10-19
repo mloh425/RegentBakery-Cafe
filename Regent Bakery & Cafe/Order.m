@@ -16,9 +16,9 @@
 @dynamic orderDate;
 @dynamic pickupDate;
 @dynamic size;
-@dynamic cake;
+@dynamic flavor;
 @dynamic message;
-@dynamic size;
+@dynamic price;
 
 + (void)load {
   [self registerSubclass];

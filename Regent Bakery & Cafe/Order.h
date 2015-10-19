@@ -20,10 +20,10 @@
 @property (strong, nonatomic) NSDate *orderDate;
 @property (strong, nonatomic) NSDate *pickupDate;
 @property (strong, nonatomic) NSString *size;
+@property (strong, nonatomic) NSString *flavor;
 //Cake
-@property (strong, nonatomic) Cake *cake; //Need methods to create/set the cake's properties?
 @property (strong, nonatomic) NSString *message;
-
+@property (strong, nonatomic) NSNumber *price;
 
 //Number of people per cake? for filtering - recommendation purposes?
 

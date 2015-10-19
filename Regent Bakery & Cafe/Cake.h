@@ -10,7 +10,6 @@
 #import <Parse/Parse.h>
 #import <Parse/PFObject+Subclass.h>
 
-//@interface Cake : PFObject <PFSubclassing>
 @interface Cake : NSObject
 @property (strong, nonatomic) NSString *flavor;
 @property (strong, nonatomic) NSString *cakeDescription;
@@ -18,7 +17,7 @@
 @property (strong, nonatomic) NSMutableDictionary *sizePricing;
 @property (strong, nonatomic) NSArray *sortedSizePricingKeys;
 
-//@property (strong, nonatomic) NSDate *pickupDate;
+-(NSString *)returnCakeServingSize:(NSString *)cakeSize;
 
 //Dictionary of available sizes to prices - May need to find a way to sort/display them when ordering
 

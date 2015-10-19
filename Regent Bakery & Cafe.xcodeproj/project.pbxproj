@@ -28,7 +28,7 @@
 		347D4B141BCA0FF300A16DAE /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4B0D1BCA0FF300A16DAE /* ParseUI.framework */; settings = {ASSET_TAGS = (); }; };
 		347D4B161BCC708700A16DAE /* cakes.json in Resources */ = {isa = PBXBuildFile; fileRef = 347D4B151BCC708700A16DAE /* cakes.json */; settings = {ASSET_TAGS = (); }; };
 		347D4B191BCDA18800A16DAE /* CakeMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347D4B181BCDA18800A16DAE /* CakeMenuViewController.m */; settings = {ASSET_TAGS = (); }; };
-		347D4B1C1BCEE73400A16DAE /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347D4B1B1BCEE73400A16DAE /* OrderViewController.m */; settings = {ASSET_TAGS = (); }; };
+		347D4B1F1BD1AFED00A16DAE /* OrderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347D4B1E1BD1AFED00A16DAE /* OrderTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34EF00021BC3339400ACC465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EF00001BC3339400ACC465 /* LaunchScreen.storyboard */; };
 		34EF000D1BC3339400ACC465 /* Regent_Bakery___CafeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF000C1BC3339400ACC465 /* Regent_Bakery___CafeTests.m */; };
 		34EF00181BC3339400ACC465 /* Regent_Bakery___CafeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF00171BC3339400ACC465 /* Regent_Bakery___CafeUITests.m */; };
@@ -40,7 +40,6 @@
 		6B0A78BC1BC8C4C900614796 /* LocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A78BB1BC8C4C900614796 /* LocationsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6B6DAA3B1BCEFC32008B07FA /* Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6DAA3A1BCEFC32008B07FA /* Keys.m */; settings = {ASSET_TAGS = (); }; };
 		6BD31D201BCBE04F00497963 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD31D1F1BCBE04F00497963 /* MapKit.framework */; };
-		6BF530DF1BCC6BBB00521C5D /* date.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BF530DE1BCC6BBB00521C5D /* date.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +84,8 @@
 		347D4B151BCC708700A16DAE /* cakes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cakes.json; sourceTree = "<group>"; };
 		347D4B171BCDA18800A16DAE /* CakeMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CakeMenuViewController.h; sourceTree = "<group>"; };
 		347D4B181BCDA18800A16DAE /* CakeMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CakeMenuViewController.m; sourceTree = "<group>"; };
-		347D4B1A1BCEE73400A16DAE /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
-		347D4B1B1BCEE73400A16DAE /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
+		347D4B1D1BD1AFED00A16DAE /* OrderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableViewController.h; sourceTree = "<group>"; };
+		347D4B1E1BD1AFED00A16DAE /* OrderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableViewController.m; sourceTree = "<group>"; };
 		34EF00011BC3339400ACC465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34EF00031BC3339400ACC465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34EF00081BC3339400ACC465 /* Regent Bakery & CafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Regent Bakery & CafeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +107,6 @@
 		6B0A78BB1BC8C4C900614796 /* LocationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationsViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
 		6B6DAA3A1BCEFC32008B07FA /* Keys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keys.m; sourceTree = "<group>"; };
 		6BD31D1F1BCBE04F00497963 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		6BF530DE1BCC6BBB00521C5D /* date.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = date.png; path = ../../../date.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,12 +238,10 @@
 				34EFFFF51BC3339400ACC465 /* AppDelegate.h */,
 				34EFFFF61BC3339400ACC465 /* AppDelegate.m */,
 				347D4ADF1BC9F78E00A16DAE /* Model */,
-				34EFFFF81BC3339400ACC465 /* ViewController.h */,
-				34EFFFF91BC3339400ACC465 /* ViewController.m */,
 				347D4B171BCDA18800A16DAE /* CakeMenuViewController.h */,
 				347D4B181BCDA18800A16DAE /* CakeMenuViewController.m */,
-				347D4B1A1BCEE73400A16DAE /* OrderViewController.h */,
-				347D4B1B1BCEE73400A16DAE /* OrderViewController.m */,
+				347D4B1D1BD1AFED00A16DAE /* OrderTableViewController.h */,
+				347D4B1E1BD1AFED00A16DAE /* OrderTableViewController.m */,
 				34EFFFFB1BC3339400ACC465 /* Main.storyboard */,
 				34EFFFFE1BC3339400ACC465 /* Assets.xcassets */,
 				34EF00031BC3339400ACC465 /* Info.plist */,
@@ -258,7 +254,6 @@
 		34EFFFF21BC3339400ACC465 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6BF530DE1BCC6BBB00521C5D /* date.png */,
 				34EFFFF31BC3339400ACC465 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -267,7 +262,6 @@
 		6B0A78B51BC8C48100614796 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				34EFFFFB1BC3339400ACC465 /* Main.storyboard */,
 				34EF00001BC3339400ACC465 /* LaunchScreen.storyboard */,
 			);
 			name = Views;
@@ -278,8 +272,6 @@
 			children = (
 				6B0A78B71BC8C4B500614796 /* MainMenuViewController.h */,
 				6B0A78B81BC8C4B500614796 /* MainMenuViewController.m */,
-				347D4B171BCDA18800A16DAE /* CakeMenuViewController.h */,
-				347D4B181BCDA18800A16DAE /* CakeMenuViewController.m */,
 				6B0A78C91BC8F8B700614796 /* Cart */,
 				6B0A78C81BC8F8AC00614796 /* Browser */,
 				6B0A78C71BC8F89200614796 /* Locations */,
@@ -434,7 +426,6 @@
 			files = (
 				34EF00021BC3339400ACC465 /* LaunchScreen.storyboard in Resources */,
 				347D4B161BCC708700A16DAE /* cakes.json in Resources */,
-				6BF530DF1BCC6BBB00521C5D /* date.png in Resources */,
 				34EFFFFF1BC3339400ACC465 /* Assets.xcassets in Resources */,
 				34EFFFFD1BC3339400ACC465 /* Main.storyboard in Resources */,
 			);
@@ -465,12 +456,10 @@
 			files = (
 				347D4AE21BC9F79B00A16DAE /* Order.m in Sources */,
 				347D4ADE1BC9F78300A16DAE /* Cake.m in Sources */,
-				34EFFFFA1BC3339400ACC465 /* ViewController.m in Sources */,
-				347D4B1C1BCEE73400A16DAE /* OrderViewController.m in Sources */,
-				34EF00271BC3344900ACC465 /* Keys.m in Sources */,
 				34EFFFF71BC3339400ACC465 /* AppDelegate.m in Sources */,
 				347D4B191BCDA18800A16DAE /* CakeMenuViewController.m in Sources */,
 				34EFFFF41BC3339400ACC465 /* main.m in Sources */,
+				347D4B1F1BD1AFED00A16DAE /* OrderTableViewController.m in Sources */,
 				6B6DAA3B1BCEFC32008B07FA /* Keys.m in Sources */,
 				6B0A78B91BC8C4B500614796 /* MainMenuViewController.m in Sources */,
 				6B0A78BC1BC8C4C900614796 /* LocationsViewController.m in Sources */,

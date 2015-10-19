@@ -7,8 +7,10 @@
 //
 
 #import "CakeMenuViewController.h"
+#import "OrderViewController.h"
 
 @interface CakeMenuViewController ()
+
 @property (strong, nonatomic) NSMutableArray *cakes;
 @end
 
@@ -21,8 +23,22 @@
     // Do any additional setup after loading the view.
     [self parseCakeJSON];
 }
+- (IBAction)selectCake:(UIButton *)sender {
+  Cake *testCake = [[Cake alloc] init];
+  testCake = self.cakes[0];
+//  OrderViewController *orderView = [[OrderViewController alloc] init];
+ 
+  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: [NSBundle mainBundle]];
+  OrderViewController *orderView = [storyboard instantiateViewControllerWithIdentifier:@"OrderView"];
+  orderView.selectedCake = testCake;
+  [self.navigationController pushViewController:orderView animated:true];
+
+  
+  
+}
 
 - (void)parseCakeJSON {
+    self.cakes = [[NSMutableArray alloc] init];
     NSError *deserializingError;
     NSString *pathToLocalJSON = [[NSBundle mainBundle] pathForResource:@"cakes" ofType:@"json"];
     NSURL *localFileURL = [NSURL fileURLWithPath:pathToLocalJSON];
@@ -53,10 +69,13 @@
         
         return (NSComparisonResult)NSOrderedSame;
       }];
+      [self.cakes addObject:flavor];
       
-      NSLog(@"%@", flavor.sortedSizePricingKeys);
-      //    NSLog(@"%@", flavor.flavor);
-      //    NSLog(@"%@", flavor.sizePricing);
+//          NSLog(@"%@", flavor.sizePricing);
+//          NSLog(@"%@", flavor.sortedSizePricingKeys);
+//          NSLog(@"%@", flavor.flavor);
+//          NSLog(@"%@", flavor.sizePricing);
+
     }
 }
 
