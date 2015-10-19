@@ -1,5 +1,4 @@
-{
-"Cake":[
+[
   {
     "flavor": "Black Forest",
     "cakeDescription": "Better known as the Portal Cake, this is a chocolate cake filled with custard cream and bing cherries. The Black Forest cake is decorated with fresh whipped cream and chocolate shavings.",
@@ -211,4 +210,3 @@
     }
   }
 ]
-}

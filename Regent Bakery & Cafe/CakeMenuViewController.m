@@ -42,10 +42,10 @@
     NSError *deserializingError;
     NSString *pathToLocalJSON = [[NSBundle mainBundle] pathForResource:@"cakes" ofType:@"json"];
     NSData *contentOfLocalFile = [NSData dataWithContentsOfFile:pathToLocalJSON];
-    NSDictionary *rootObject = [NSJSONSerialization JSONObjectWithData:contentOfLocalFile options:0 error:&deserializingError];
+    NSArray *rootObject = [NSJSONSerialization JSONObjectWithData:contentOfLocalFile options:0 error:&deserializingError];
   
-  NSArray *cakeObjects = rootObject[@"Cake"];
-  for (NSDictionary *eachCake in cakeObjects) {
+//  NSArray *cakeObjects = rootObject[@"Cake"];
+  for (NSDictionary *eachCake in rootObject) {
     Cake *cake = [[Cake alloc]init];
     cake.flavor = eachCake[@"flavor"];
     cake.cakeDescription = eachCake[@"cakeDescription"];
