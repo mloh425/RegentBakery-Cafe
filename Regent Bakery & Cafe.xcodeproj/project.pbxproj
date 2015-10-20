@@ -39,6 +39,7 @@
 		6B0A78B91BC8C4B500614796 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A78B81BC8C4B500614796 /* MainMenuViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6B0A78BC1BC8C4C900614796 /* LocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A78BB1BC8C4C900614796 /* LocationsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6B6DAA3B1BCEFC32008B07FA /* Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6DAA3A1BCEFC32008B07FA /* Keys.m */; settings = {ASSET_TAGS = (); }; };
+		6B6DAA441BD0CA86008B07FA /* CakeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6DAA431BD0CA86008B07FA /* CakeCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		6BD31D201BCBE04F00497963 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD31D1F1BCBE04F00497963 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +107,8 @@
 		6B0A78BA1BC8C4C900614796 /* LocationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationsViewController.h; sourceTree = "<group>"; };
 		6B0A78BB1BC8C4C900614796 /* LocationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationsViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
 		6B6DAA3A1BCEFC32008B07FA /* Keys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keys.m; sourceTree = "<group>"; };
+		6B6DAA421BD0CA86008B07FA /* CakeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CakeCollectionViewCell.h; sourceTree = "<group>"; };
+		6B6DAA431BD0CA86008B07FA /* CakeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CakeCollectionViewCell.m; sourceTree = "<group>"; };
 		6BD31D1F1BCBE04F00497963 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -159,6 +162,8 @@
 				347D4ADD1BC9F78300A16DAE /* Cake.m */,
 				347D4AE01BC9F79B00A16DAE /* Order.h */,
 				347D4AE11BC9F79B00A16DAE /* Order.m */,
+				6B6DAA421BD0CA86008B07FA /* CakeCollectionViewCell.h */,
+				6B6DAA431BD0CA86008B07FA /* CakeCollectionViewCell.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -273,7 +278,7 @@
 				6B0A78B71BC8C4B500614796 /* MainMenuViewController.h */,
 				6B0A78B81BC8C4B500614796 /* MainMenuViewController.m */,
 				6B0A78C91BC8F8B700614796 /* Cart */,
-				6B0A78C81BC8F8AC00614796 /* Browser */,
+				6B0A78C81BC8F8AC00614796 /* Cakes */,
 				6B0A78C71BC8F89200614796 /* Locations */,
 			);
 			name = Controllers;
@@ -288,11 +293,13 @@
 			name = Locations;
 			sourceTree = "<group>";
 		};
-		6B0A78C81BC8F8AC00614796 /* Browser */ = {
+		6B0A78C81BC8F8AC00614796 /* Cakes */ = {
 			isa = PBXGroup;
 			children = (
+				347D4B171BCDA18800A16DAE /* CakeMenuViewController.h */,
+				347D4B181BCDA18800A16DAE /* CakeMenuViewController.m */,
 			);
-			name = Browser;
+			name = Cakes;
 			sourceTree = "<group>";
 		};
 		6B0A78C91BC8F8B700614796 /* Cart */ = {

@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  
   // Do any additional setup after loading the view.
   self.currentImageIndex = 0;
   // set up the images array
@@ -29,22 +30,27 @@
                                          userInfo: nil
                                           repeats: YES];
 //  [self fadeInEffect];
+
 }
 
 - (void) handleTimer: (NSTimer *) timer {
   self.imageView.hidden = false;
   self.currentImageIndex++;
-  NSLog(@"%d",self.currentImageIndex);
+//  NSLog(@"%d",self.currentImageIndex);
 
   if ( self.currentImageIndex == images.count) {
     self.currentImageIndex = 0;
-  NSLog(@"%d",self.currentImageIndex);
+//  NSLog(@"%d",self.currentImageIndex);
   }
 //  [self fadeInEffect];
   [self.imageView setImage:[UIImage imageNamed: images[self.currentImageIndex]]];
   
  
 
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+  return UIStatusBarStyleLightContent;
 }
 
 - (void) fadeInEffect {

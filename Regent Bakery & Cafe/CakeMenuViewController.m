@@ -12,6 +12,11 @@
 @interface CakeMenuViewController ()
 
 @property (strong, nonatomic) NSMutableArray *cakes;
+@property (strong, nonatomic) IBOutlet UIView *detailView;
+@property (strong, nonatomic) IBOutlet UIButton *closeButton;
+@property (strong, nonatomic) IBOutlet UIImageView *largeImage;
+@property (strong, nonatomic) IBOutlet UITextView *detailTextView;
+
 @end
 
 
@@ -21,7 +26,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self parseCakeJSON];
+  self.detailView.hidden = true;
+  self.collectionView.dataSource = self;
+  self.collectionView.delegate = self;
+  self.cakes = [[NSMutableArray alloc]init];
+  [self parseCakeJSON];
+  
+  
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+  return UIStatusBarStyleLightContent;
 }
 - (IBAction)selectCake:(UIButton *)sender {
   Cake *testCake = [[Cake alloc] init];
@@ -41,8 +56,7 @@
     self.cakes = [[NSMutableArray alloc] init];
     NSError *deserializingError;
     NSString *pathToLocalJSON = [[NSBundle mainBundle] pathForResource:@"cakes" ofType:@"json"];
-    NSURL *localFileURL = [NSURL fileURLWithPath:pathToLocalJSON];
-    NSData *contentOfLocalFile = [NSData dataWithContentsOfURL:localFileURL];
+    NSData *contentOfLocalFile = [NSData dataWithContentsOfFile:pathToLocalJSON];
     NSArray *rootObject = [NSJSONSerialization JSONObjectWithData:contentOfLocalFile options:0 error:&deserializingError];
   
     //  NSLog(@"%lu", (unsigned long)rootObject.count);
@@ -79,19 +93,53 @@
     }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+  CakeCollectionViewCell *cell = (CakeCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"CakeCell" forIndexPath:indexPath];
+  Cake *currCake = self.cakes[indexPath.row];
+  cell.cakeImageView.image = [UIImage imageNamed: currCake.imageName];
+  cell.cakeName.text = currCake.flavor;
+  self.cell = cell;
+  return cell;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    {
+      //its iPhone. Find out which one
+      CGSize result = [[UIScreen mainScreen] bounds].size;
+      NSInteger screenHeight = result.height;
+      switch (screenHeight) {
+        case 480:
+          //old
+          return CGSizeMake(130.f, 120.f);
+        case 568:
+          // iphone 5
+          return CGSizeMake(140.f, 150.f);
+        case 667:
+          // iphone 6
+          return CGSizeMake(160.f, 160.f);
+        case 736:
+          return CGSizeMake(180.f, 170.f);
+        default:
+          break;
+      }
+    }
+    else
+    {
+      return CGSizeMake(230.f, 210.f);
+    }
+  return CGSizeMake(0, 0);
 }
-*/
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+  // show a bigger image?
+  Cake *selectedCake = self.cakes[indexPath.row];
+  NSLog(@"%@",selectedCake.flavor);
+  self.largeImage.image = [UIImage imageNamed:selectedCake.imageName];
+  self.detailTextView.text = selectedCake.cakeDescription;
+  self.detailView.hidden = false;
+  self.collectionView.userInteractionEnabled = false;
+}
+
 
 @end

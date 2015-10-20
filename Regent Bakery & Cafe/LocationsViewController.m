@@ -106,6 +106,10 @@
   [self showLocationOnMaps];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+  return UIStatusBarStyleLightContent;
+}
+
 - (void) showLocationOnMaps {
   // captiol hill
   CLLocationCoordinate2D captiol = CLLocationCoordinate2DMake(47.615397, -122.314106);
