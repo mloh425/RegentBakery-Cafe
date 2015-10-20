@@ -1,8 +1,8 @@
 [
   {
     "flavor": "Black Forest",
-    "cakeDescription": "Better known as the Portal Cake, this is a chocolate cake filled with custard cream and bing cherries. The Black Forest cake is decorated with fresh whipped cream and chocolate shavings.",
     "image": "blackforrest",
+    "description": "Better known as the Portal Cake, this is a chocolate cake filled with custard cream and bing cherries. The Black Forest cake is decorated with fresh whipped cream and chocolate shavings.",
     "sizePricing": {
       "6 inch": "22",
       "8 inch": "32",
@@ -15,16 +15,16 @@
   },
   {
     "flavor": "Cheese Cake",
-    "cakeDescription": "A rich, traditional New York style cheesecake with a vanilla cake base.",
     "image": "cheesecake",
+    "description": "A rich, traditional New York style cheesecake with a vanilla cake base.",
     "sizePricing": {
-    "8 inch": "32",
+      "8 inch": "32",
     }
   },
   {
     "flavor": "Chestnut",
-    "cakeDescription": "A vanilla sponge cake layered with chestnut puree and covered in a caramel glaze.",
     "image": "chestnutcake",
+    "description": "A vanilla sponge cake layered with chestnut puree and covered in a caramel glaze.",
     "sizePricing": {
       "6 inch": "26",
       "8 inch": "36",
@@ -37,8 +37,8 @@
   },
   {
     "flavor": "Chocolate Mousse",
-    "cakeDescription": "A rich, creamy mousse cake made with chocolate.",
     "image": "chocolatemousse",
+    "description": "A rich, creamy mousse cake made with chocolate.",
     "sizePricing": {
       "6 inch": "25",
       "8 inch": "35",
@@ -51,8 +51,8 @@
   },
   {
     "flavor": "Fruit Cake",
-    "cakeDescription": "Layered with honeydew and cantaloupe, our popular fresh fruit cake is light and refreshing.",
     "image": "fruit",
+    "description": "Layered with honeydew and cantaloupe, our popular fresh fruit cake is light and refreshing.",
     "sizePricing": {
       "6 inch": "20",
       "8 inch": "30",
@@ -65,8 +65,8 @@
   },
   {
     "flavor" : "Green Tea Mousse",
-    "cakeDescription": "Beautiful in its emerald color, it is filled with layers of delicous matcha flavors.",
     "image": "greenteamousse",
+    "description": "Beautiful in its emerald color, it is filled with layers of delicous matcha flavors.",
     "sizePricing": {
       "8 inch": "34",
       "10 inch": "48",
@@ -78,8 +78,8 @@
   },
   {
     "flavor": "Hazelnut Truffle",
-    "cakeDescription": "Topped off with cocoa powder, our delicious hazelnut truffle is a rich yet light in flavoring.",
     "image": "hazelnuttruffle",
+    "description": "Topped off with cocoa powder, our delicious hazelnut truffle is a rich yet light in flavoring.",
     "sizePricing": {
       "8 inch": "35",
       "Quarter Sheet": "62",
@@ -90,8 +90,8 @@
   },
   {
     "flavor" : "Mango Cake",
-    "cakeDescription": "Our seasonal, fresh mango cake is layered with light whipped cream and vanilla sponge cake.",
-    "image": "freshmango",
+    "image" : "freshmango",
+    "description": "Our seasonal, fresh mango cake is layered with light whipped cream and vanilla sponge cake.",
     "sizePricing": {
       "6 inch": "26",
       "8 inch": "36",
@@ -104,8 +104,8 @@
   },
   {
     "flavor": "Mango Mousse",
-    "cakeDescription": "A mango flavored sweet, yet tart mousse cake with a vanilla base sponge cake.",
     "image": "mangomousse",
+    "description": "A mango flavored sweet, yet tart mousse cake with a vanilla base sponge cake.",
     "sizePricing": {
       "6 inch": "24",
       "8 inch": "33",
@@ -118,8 +118,8 @@
   },
   {
     "flavor": "Mocha Cake",
-    "cakeDescription": "A vanilla sponge cake layered with mocha flavored whipped cream.",
     "image": "mocha",
+    "description": "A vanilla sponge cake layered with mocha flavored whipped cream.",
     "sizePricing": {
       "8 inch": "30",
       "10 inch": "44",
@@ -131,8 +131,8 @@
   },
   {
     "flavor" : "Napoleon",
-    "cakeDescription": "Layered with butter cream and wafers, the Napoleon is a crispy and savory desert.",
-    "image": "napolean",
+    "image" : "napoleon",
+    "description": "Layered with butter cream and wafers, the Napoleon is a crispy and savory desert.",
     "sizePricing": {
       "8 inch": "35",
       "Quarter Sheet": "62",
@@ -143,8 +143,8 @@
   },
   {
     "flavor" : "Strawberry Cake",
-    "cakeDescription": "Vanilla sponge cake layered with fresh strawberries and light whipped cream. ",
-    "image": "strawberry",
+    "image" : "strawberry",
+    "description": "Vanilla sponge cake layered with fresh strawberries and light whipped cream. ",
     "sizePricing": {
       "6 inch": "24",
       "8 inch": "34",
@@ -157,8 +157,8 @@
   },
   {
     "flavor" : "Strawberry Mousse",
-    "cakeDescription": "A strawberry flavored sweet, yet tart mousse cake with a vanilla base sponge cake.",
-    "image": "strawberrymousse",
+    "image" : "strawberrymousse",
+    "description": "A strawberry flavored sweet, yet tart mousse cake with a vanilla base sponge cake.",
     "sizePricing": {
       "6 inch": "24",
       "8 inch": "34",
@@ -171,8 +171,8 @@
   },
   {
     "flavor" : "Swiss Chocolate",
-    "cakeDescription": "A chocolate sponge layered cake with a light, milk chocolate whipped cream.",
-    "image": "swisschocolate",
+    "image" : "swisschocolate",
+    "description": "A chocolate sponge layered cake with a light, milk chocolate whipped cream.",
     "sizePricing": {
       "8 inch": "33",
       "10 inch": "48",
@@ -184,8 +184,8 @@
   },
   {
     "flavor": "Taro",
-    "cakeDescription": "A vanilla sponge cake layered with fresh taro puree.",
     "image": "taro",
+    "description": "A vanilla sponge cake layered with fresh taro puree.",
     "sizePricing": {
       "6 inch": "22",
       "8 inch": "32",
@@ -198,8 +198,8 @@
   },
   {
     "flavor": "Tiramisu",
-    "cakeDescription": "A rich desert that blends cocoa, espresso, mascarpone cheese, and touch of rum.",
     "image": "tiramisu",
+    "description": "A rich desert that blends cocoa, espresso, mascarpone cheese, and touch of rum.",
     "sizePricing": {
       "8 inch": "35",
       "10 inch": "50",

@@ -7,6 +7,7 @@
 //
 
 #import "CakeMenuViewController.h"
+#import "OrderViewController.h"
 #import "CakeCollectionViewCell.h"
 #import "Cake.h"
 @interface CakeMenuViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
@@ -17,9 +18,14 @@
 @property (strong, nonatomic) IBOutlet UIButton *closeButton;
 @property (strong, nonatomic) IBOutlet UIImageView *largeImage;
 @property (strong, nonatomic) IBOutlet UITextView *detailTextView;
+@property (strong, nonatomic) Cake *selectedCake;
 
 @end
 
+
+
+
+//Pass reference of selected cake to order/customization view controller -> maybe just go to Detail then order?
 @implementation CakeMenuViewController
 
 - (void)viewDidLoad {
@@ -33,26 +39,65 @@
   
   
 }
-
-- (UIStatusBarStyle)preferredStatusBarStyle {
-  return UIStatusBarStyleLightContent;
+- (IBAction)selectCake:(UIButton *)sender {
+  
+//  OrderViewController *orderView = [[OrderViewController alloc] init];
+ 
+//  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: [NSBundle mainBundle]];
+//  OrderViewController *orderView = [storyboard instantiateViewControllerWithIdentifier:@"OrderView"];
+  
+  
+//  [self.navigationController pushViewController:orderView animated:true];
+ // [self performSegueWithIdentifier:@"ShowOrderForm" sender:sender];
+  
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  if ([segue.identifier isEqual: @"ShowOrderForm"]) {
+    OrderViewController *orderView = [segue destinationViewController];
+    orderView.selectedCake = self.selectedCake;
+  }
+}
 - (void)parseCakeJSON {
+    self.cakes = [[NSMutableArray alloc] init];
     NSError *deserializingError;
     NSString *pathToLocalJSON = [[NSBundle mainBundle] pathForResource:@"cakes" ofType:@"json"];
     NSData *contentOfLocalFile = [NSData dataWithContentsOfFile:pathToLocalJSON];
     NSArray *rootObject = [NSJSONSerialization JSONObjectWithData:contentOfLocalFile options:0 error:&deserializingError];
   
-//  NSArray *cakeObjects = rootObject[@"Cake"];
-  for (NSDictionary *eachCake in rootObject) {
-    Cake *cake = [[Cake alloc]init];
-    cake.flavor = eachCake[@"flavor"];
-    cake.cakeDescription = eachCake[@"cakeDescription"];
-    cake.sizePricing = eachCake[@"sizePricing"];
-    cake.imageName = eachCake[@"image"];
-    [self.cakes addObject:cake]; // add a single cake object to cakes array
-  }
+    //  NSLog(@"%lu", (unsigned long)rootObject.count);
+  
+    //Ideally I want to parse this in the menu VC and go from there...
+    //Be able to select sizes
+    //Writing
+    //Set the price
+    //Add to cart.
+    for (NSDictionary *cake in rootObject) {
+      Cake *flavor = [[Cake alloc] init];
+      flavor.flavor = cake[@"flavor"];
+      flavor.cakeDescription = cake[@"cakeDescription"];
+      flavor.sizePricing = cake[@"sizePricing"];
+      flavor.imageName = cake[@"image"];
+      flavor.sortedSizePricingKeys = [flavor.sizePricing keysSortedByValueUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        if ([obj1 integerValue] > [obj2 integerValue]) {
+          
+          return (NSComparisonResult)NSOrderedDescending;
+        }
+        if ([obj1 integerValue] < [obj2 integerValue]) {
+          
+          return (NSComparisonResult)NSOrderedAscending;
+        }
+        
+        return (NSComparisonResult)NSOrderedSame;
+      }];
+      [self.cakes addObject:flavor];
+      
+//          NSLog(@"%@", flavor.sizePricing);
+//          NSLog(@"%@", flavor.sortedSizePricingKeys);
+//          NSLog(@"%@", flavor.flavor);
+//          NSLog(@"%@", flavor.sizePricing);
+
+    }
 }
 - (IBAction)closeButtonClicked:(id)sender {
   self.detailView.hidden = true;
@@ -107,10 +152,10 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
   // show a bigger image?
-  Cake *selectedCake = self.cakes[indexPath.row];
-  NSLog(@"%@",selectedCake.flavor);
-  self.largeImage.image = [UIImage imageNamed:selectedCake.imageName];
-  self.detailTextView.text = selectedCake.cakeDescription;
+  self.selectedCake = self.cakes[indexPath.row];
+  NSLog(@"%@",self.selectedCake.flavor);
+  self.largeImage.image = [UIImage imageNamed:self.selectedCake.imageName];
+  self.detailTextView.text = self.selectedCake.cakeDescription;
   self.detailView.hidden = false;
   self.collectionView.userInteractionEnabled = false;
 }

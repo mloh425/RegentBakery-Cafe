@@ -28,6 +28,7 @@
 		347D4B141BCA0FF300A16DAE /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347D4B0D1BCA0FF300A16DAE /* ParseUI.framework */; settings = {ASSET_TAGS = (); }; };
 		347D4B161BCC708700A16DAE /* cakes.json in Resources */ = {isa = PBXBuildFile; fileRef = 347D4B151BCC708700A16DAE /* cakes.json */; settings = {ASSET_TAGS = (); }; };
 		347D4B191BCDA18800A16DAE /* CakeMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347D4B181BCDA18800A16DAE /* CakeMenuViewController.m */; settings = {ASSET_TAGS = (); }; };
+		347D4B1F1BD1AFED00A16DAE /* OrderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347D4B1E1BD1AFED00A16DAE /* OrderTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		34EF00021BC3339400ACC465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EF00001BC3339400ACC465 /* LaunchScreen.storyboard */; };
 		34EF000D1BC3339400ACC465 /* Regent_Bakery___CafeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF000C1BC3339400ACC465 /* Regent_Bakery___CafeTests.m */; };
 		34EF00181BC3339400ACC465 /* Regent_Bakery___CafeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF00171BC3339400ACC465 /* Regent_Bakery___CafeUITests.m */; };
@@ -84,6 +85,8 @@
 		347D4B151BCC708700A16DAE /* cakes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cakes.json; sourceTree = "<group>"; };
 		347D4B171BCDA18800A16DAE /* CakeMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CakeMenuViewController.h; sourceTree = "<group>"; };
 		347D4B181BCDA18800A16DAE /* CakeMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CakeMenuViewController.m; sourceTree = "<group>"; };
+		347D4B1D1BD1AFED00A16DAE /* OrderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableViewController.h; sourceTree = "<group>"; };
+		347D4B1E1BD1AFED00A16DAE /* OrderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableViewController.m; sourceTree = "<group>"; };
 		34EF00011BC3339400ACC465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34EF00031BC3339400ACC465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34EF00081BC3339400ACC465 /* Regent Bakery & CafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Regent Bakery & CafeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,6 +243,11 @@
 				34EFFFF51BC3339400ACC465 /* AppDelegate.h */,
 				34EFFFF61BC3339400ACC465 /* AppDelegate.m */,
 				347D4ADF1BC9F78E00A16DAE /* Model */,
+				347D4B171BCDA18800A16DAE /* CakeMenuViewController.h */,
+				347D4B181BCDA18800A16DAE /* CakeMenuViewController.m */,
+				347D4B1D1BD1AFED00A16DAE /* OrderTableViewController.h */,
+				347D4B1E1BD1AFED00A16DAE /* OrderTableViewController.m */,
+				34EFFFFB1BC3339400ACC465 /* Main.storyboard */,
 				34EFFFFE1BC3339400ACC465 /* Assets.xcassets */,
 				34EF00031BC3339400ACC465 /* Info.plist */,
 				347D4B151BCC708700A16DAE /* cakes.json */,
@@ -259,7 +267,6 @@
 		6B0A78B51BC8C48100614796 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				34EFFFFB1BC3339400ACC465 /* Main.storyboard */,
 				34EF00001BC3339400ACC465 /* LaunchScreen.storyboard */,
 			);
 			name = Views;
@@ -459,6 +466,7 @@
 				34EFFFF71BC3339400ACC465 /* AppDelegate.m in Sources */,
 				347D4B191BCDA18800A16DAE /* CakeMenuViewController.m in Sources */,
 				34EFFFF41BC3339400ACC465 /* main.m in Sources */,
+				347D4B1F1BD1AFED00A16DAE /* OrderTableViewController.m in Sources */,
 				6B6DAA441BD0CA86008B07FA /* CakeCollectionViewCell.m in Sources */,
 				6B6DAA3B1BCEFC32008B07FA /* Keys.m in Sources */,
 				6B0A78B91BC8C4B500614796 /* MainMenuViewController.m in Sources */,
