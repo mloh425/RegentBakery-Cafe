@@ -51,6 +51,7 @@
   self.order.pickupLocation = self.locations[0];
   self.pickupDatePicker.datePickerMode = UIDatePickerModeDate;
   self.priceLabel.text = [NSString stringWithFormat:@"$%@",self.order.price];
+  self.servingsLabel.text = [NSString stringWithFormat:@"%@", [self.selectedCake returnCakeServingSize:selectedSize]];
   [self pickUpDatePickerSetUp];
 
 }

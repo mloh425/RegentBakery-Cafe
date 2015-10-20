@@ -467,6 +467,7 @@
 				347D4B191BCDA18800A16DAE /* CakeMenuViewController.m in Sources */,
 				34EFFFF41BC3339400ACC465 /* main.m in Sources */,
 				347D4B1F1BD1AFED00A16DAE /* OrderTableViewController.m in Sources */,
+				6B6DAA441BD0CA86008B07FA /* CakeCollectionViewCell.m in Sources */,
 				6B6DAA3B1BCEFC32008B07FA /* Keys.m in Sources */,
 				6B0A78B91BC8C4B500614796 /* MainMenuViewController.m in Sources */,
 				6B0A78BC1BC8C4C900614796 /* LocationsViewController.m in Sources */,

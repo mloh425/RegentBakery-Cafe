@@ -8,16 +8,21 @@
 
 #import "CakeMenuViewController.h"
 #import "OrderViewController.h"
-
-@interface CakeMenuViewController ()
-
+#import "CakeCollectionViewCell.h"
+#import "Cake.h"
+@interface CakeMenuViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (strong, nonatomic) CakeCollectionViewCell *cell;
 @property (strong, nonatomic) NSMutableArray *cakes;
 @property (strong, nonatomic) IBOutlet UIView *detailView;
 @property (strong, nonatomic) IBOutlet UIButton *closeButton;
 @property (strong, nonatomic) IBOutlet UIImageView *largeImage;
 @property (strong, nonatomic) IBOutlet UITextView *detailTextView;
+@property (strong, nonatomic) Cake *selectedCake;
 
 @end
+
+
 
 
 //Pass reference of selected cake to order/customization view controller -> maybe just go to Detail then order?
@@ -34,24 +39,25 @@
   
   
 }
-
-- (UIStatusBarStyle)preferredStatusBarStyle {
-  return UIStatusBarStyleLightContent;
-}
 - (IBAction)selectCake:(UIButton *)sender {
-  Cake *testCake = [[Cake alloc] init];
-  testCake = self.cakes[0];
+  
 //  OrderViewController *orderView = [[OrderViewController alloc] init];
  
-  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: [NSBundle mainBundle]];
-  OrderViewController *orderView = [storyboard instantiateViewControllerWithIdentifier:@"OrderView"];
-  orderView.selectedCake = testCake;
-  [self.navigationController pushViewController:orderView animated:true];
-
+//  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: [NSBundle mainBundle]];
+//  OrderViewController *orderView = [storyboard instantiateViewControllerWithIdentifier:@"OrderView"];
   
+  
+//  [self.navigationController pushViewController:orderView animated:true];
+ // [self performSegueWithIdentifier:@"ShowOrderForm" sender:sender];
   
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  if ([segue.identifier isEqual: @"ShowOrderForm"]) {
+    OrderViewController *orderView = [segue destinationViewController];
+    orderView.selectedCake = self.selectedCake;
+  }
+}
 - (void)parseCakeJSON {
     self.cakes = [[NSMutableArray alloc] init];
     NSError *deserializingError;
@@ -69,8 +75,9 @@
     for (NSDictionary *cake in rootObject) {
       Cake *flavor = [[Cake alloc] init];
       flavor.flavor = cake[@"flavor"];
-      flavor.cakeDescription = cake[@"description"];
+      flavor.cakeDescription = cake[@"cakeDescription"];
       flavor.sizePricing = cake[@"sizePricing"];
+      flavor.imageName = cake[@"image"];
       flavor.sortedSizePricingKeys = [flavor.sizePricing keysSortedByValueUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
         if ([obj1 integerValue] > [obj2 integerValue]) {
           
@@ -91,6 +98,18 @@
 //          NSLog(@"%@", flavor.sizePricing);
 
     }
+}
+- (IBAction)closeButtonClicked:(id)sender {
+  self.detailView.hidden = true;
+  self.closeButton.highlighted = true;
+  [sender setSelected:true];
+  self.collectionView.userInteractionEnabled = true;
+}
+
+#pragma CollectionView
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+  return self.cakes.count; // 16
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -133,10 +152,10 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
   // show a bigger image?
-  Cake *selectedCake = self.cakes[indexPath.row];
-  NSLog(@"%@",selectedCake.flavor);
-  self.largeImage.image = [UIImage imageNamed:selectedCake.imageName];
-  self.detailTextView.text = selectedCake.cakeDescription;
+  self.selectedCake = self.cakes[indexPath.row];
+  NSLog(@"%@",self.selectedCake.flavor);
+  self.largeImage.image = [UIImage imageNamed:self.selectedCake.imageName];
+  self.detailTextView.text = self.selectedCake.cakeDescription;
   self.detailView.hidden = false;
   self.collectionView.userInteractionEnabled = false;
 }

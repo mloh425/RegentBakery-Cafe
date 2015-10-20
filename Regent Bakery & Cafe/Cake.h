@@ -16,6 +16,7 @@
 @property (strong, nonatomic) NSArray *photos; //Whole Cake, Slice, SideView
 @property (strong, nonatomic) NSMutableDictionary *sizePricing;
 @property (strong, nonatomic) NSArray *sortedSizePricingKeys;
+@property (strong, nonatomic) NSString *imageName;
 
 -(NSString *)returnCakeServingSize:(NSString *)cakeSize;
 
