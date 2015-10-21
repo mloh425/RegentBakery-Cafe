@@ -10,6 +10,6 @@
 #import "Cake.h"
 
 
-@interface OrderTableViewController : UITableViewController 
+@interface OrderViewController : UIViewController 
   @property (strong, nonatomic) Cake *selectedCake;
 @end

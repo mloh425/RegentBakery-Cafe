@@ -6,12 +6,12 @@
 //  Copyright © 2015 Regent Bakery. All rights reserved.
 //
 
-#import "OrderTableViewController.h"
+#import "OrderViewController.h"
 #import "Order.h"
 #import <Parse/Parse.h>
 #import <objc/runtime.h>
 
-@interface OrderTableViewController () <UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate>
+@interface OrderViewController () <UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIPickerView *sizePicker;
 @property (weak, nonatomic) IBOutlet UITextField *cakeWritingTextField;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
@@ -26,7 +26,7 @@
 @property (strong, nonatomic) UIAlertController *missingFields;
 @end
 
-@implementation OrderTableViewController
+@implementation OrderViewController
 
 - (void)viewDidLoad {
   [super viewDidLoad];
